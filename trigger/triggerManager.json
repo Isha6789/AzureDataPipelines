@@ -1,0 +1,24 @@
+{
+	"name": "triggerManager",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "StorageEventTrigger",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "BlobEventsTrigger",
+		"typeProperties": {
+			"blobPathBeginsWith": "/source/blobs/csvfilesFact_Sales_1.csv",
+			"ignoreEmptyBlobs": true,
+			"scope": "/subscriptions/2d9155e4-f6ff-431f-ad80-e53d10a8c979/resourceGroups/cloud-demo/providers/Microsoft.Storage/storageAccounts/storagedfisha",
+			"events": [
+				"Microsoft.Storage.BlobCreated"
+			]
+		}
+	}
+}

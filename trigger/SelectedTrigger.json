@@ -1,0 +1,25 @@
+{
+	"name": "SelectedTrigger",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "onlyselectedfiles",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "ScheduleTrigger",
+		"typeProperties": {
+			"recurrence": {
+				"frequency": "Minute",
+				"interval": 15,
+				"startTime": "2026-02-19T21:44:29",
+				"endTime": "2026-02-21T21:38:00",
+				"timeZone": "India Standard Time"
+			}
+		}
+	}
+}
